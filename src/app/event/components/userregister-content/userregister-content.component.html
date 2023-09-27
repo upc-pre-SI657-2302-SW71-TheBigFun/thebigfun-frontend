@@ -1,0 +1,90 @@
+<div class="footer arriba">
+
+  <div class="left">
+    <img src="assets/logo.png">
+  </div>
+
+
+  <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="example-viewport">
+
+    <div class="rights justify-content-center">
+
+      <div class="textos">
+
+        <div class="flex flex-column gap-2 ">
+          <label class="title" >Username</label>
+          <form class="example-form container">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter your username</mat-label>
+              <input type="text" matInput [(ngModel)]="user.username" name="userName">
+            </mat-form-field>
+          </form>
+        </div>
+        <div class="flex flex-column gap-2 ">
+          <label class="title" >Password</label>
+          <form class="example-form container">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter your password</mat-label>
+              <input type="text" matInput [(ngModel)]="user.password" name="password">
+            </mat-form-field>
+          </form>
+        </div>
+
+
+
+        <div class="flex flex-column gap-2 ">
+          <label class="title" >Email</label>
+
+          <form class="example-form container container2">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter your email</mat-label>
+              <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                     [(ngModel)]="user.email" name="email">
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')" class="errores">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')" class="errores">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+
+        </div>
+        <mat-form-field>
+          <mat-label>User Type</mat-label>
+          <mat-select [(ngModel)]="userSelected">
+            <mat-option *ngFor="let user of typeusers" [value]="user.value">
+              {{user.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <div class="example-label">
+            <div class="example-button-row ">
+              <button class="uptButton" (click)="createUser()" mat-raised-button style="width: 200px; height: 55px; border-radius: 25px;">Sign up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- Contenido -->
+<div class="background">
+  <div class="title">
+    <h1>POPULAR EVENTS</h1>
+  </div>
+  <div class="grid-container">
+    <div *ngFor="let event of events; let i=index" class="card">
+      <div class="card-image">
+        <img [src]="event.image" [alt]="event.name">
+      </div>
+      <div class="card-title eventName">{{ event.name }}</div>
+      <div class="card-action">
+        <a [routerLink]="['/eventDetail',i]">
+          <button mat-button class="event-button">View details</button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>

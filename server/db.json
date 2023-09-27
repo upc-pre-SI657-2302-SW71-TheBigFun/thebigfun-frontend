@@ -1,0 +1,92 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Chatarrita",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqx5gurXNgoiEx8PNnw-AJm7bJz3F1-TLpgA&usqp=CAU",
+      "date": "12/10/2023",
+      "hour": "8pm",
+      "cost": "20$",
+      "aforo": "200"
+    },
+    {
+      "id": 2,
+      "name": "Japanese expressions",
+      "img": "https://www.curriculumnacional.cl/estudiante/621/articles-144873_imagen_portada.thumb_iCuadrada.jpg",
+      "date": "1/08/2023",
+      "hour": "12pm",
+      "cost": "45$",
+      "aforo": "350"
+    },
+    {
+      "img": "https://www.anayainfantilyjuvenil.com/images/libros/grande/9788469833728-la-vida-es-sueno-clasicos-hispanicos.jpg",
+      "name": "La vida es suenio",
+      "date": "2023-05-24T05:00:00.000Z",
+      "cost": "20$",
+      "description": "asfasfaf",
+      "aforo": "500",
+      "id": 3
+    },
+    {
+      "name": "Music Concert",
+      "date": "2023-05-10T05:00:00.000Z",
+      "hour": "12pm",
+      "img": "https://marketplace.canva.com/EAEn7HPzgmg/1/0/1131w/canva-purple-modern-music-concert-flyer-oW_L55Pxz54.jpg",
+      "cost": "60$",
+      "description": "Concert at San Marcos Stadium",
+      "aforo": "600",
+      "id": 4
+    },
+    {
+      "name": "The big pruch",
+      "date": "2023-05-20T05:00:00.000Z",
+      "img": "https://eventplanning24x7.files.wordpress.com/2018/04/events.png",
+      "hour": "3pm",
+      "cost": "200",
+      "description": "Es un concierto de benficiencia con tematica cristiana",
+      "aforo": "500",
+      "id": 5
+    },
+    {
+      "name": "Fiesta ",
+      "aforo": "sas",
+      "description": "asa",
+      "cost": "122",
+      "hour": "12",
+      "date": "2023-06-14T05:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "pedropablo",
+      "fullname": "Pedro Pablo",
+      "password": "pedropablo",
+      "doc": "87654321",
+      "email": "pedropablo@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "alejotoledo",
+      "fullname": "Alejandro Toledo",
+      "password": "alejotoledo",
+      "doc": "17654321",
+      "email": "alejotoledo@gmail.com"
+    }
+  ],
+  "organizers": [
+    {
+      "id": 1,
+      "username": "pedropablo",
+      "fullname": "Pedro Pablo",
+      "password": "pedropablo",
+      "doc": "87654321",
+      "email": "pedropablo@gmail.com",
+      "phone": "999563680",
+      "namecompany": "Stoza",
+      "ruc": "20 50364496 8",
+      "adresscompany": " Calle José Ortega y Gasset, 40 - loc."
+    }
+  ]
+}
